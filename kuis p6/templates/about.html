@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flask - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Belajar Flask</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+        </div>
+    </div>
+    
+    <div class="header">
+        <h1>About Us</h1>
+        <div class="info">
+            <p><strong>Nama:</strong> {{ name }}</p>
+            <p><strong>NPM:</strong> {{ npm }}</p>
+        </div>
+    </div>
+        
+        <h2>Ikuti Saya</h2>
+        <hr>
+        <p>Anda dapat mengikuti saya di media sosial:</p>
+        <ul>
+            <li><a href="https://github.com/ElsaAmbarwati" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.instagram.com/scaaii_/?igsh=cnByNWExMnhsZ2cy" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+     </div>
+</body>
+</html>

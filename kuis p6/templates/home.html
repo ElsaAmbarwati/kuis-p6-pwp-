@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flask</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">Belajar Flask</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Tentang Belajar Flask</h1>
+        <hr>
+        <p>Belajar flask ini dibuat Oleh <a href="#">{{ name }}</a> seorang ahli software engineer yang suka bekerja secara remote</p>
+    </div>
+    <div class="content">
+        <h2>Latar Belakang</h2>
+        <hr>
+        <p>Flask adalah framework web minimalis yang ditulis dalam Python, diciptakan oleh Armin Ronacher pada tahun 2010. Dikenal sebagai "microframework", Flask menawarkan fleksibilitas dengan fitur dasar seperti routing, template rendering (menggunakan Jinja2), dan dukungan untuk ekstensi. Cocok untuk aplikasi web sederhana hingga kompleks, Flask memiliki komunitas aktif dan dokumentasi lengkap, menjadikannya pilihan populer bagi pengembang yang ingin membangun aplikasi web dengan cepat dan efisien.</p>
+        <h2>Motivasi</h2>
+        <hr>
+        <p>Setiap proyek adalah kesempatan untuk belajar sesuatu yang baru. Jangan takut untuk mencoba teknologi baru atau metode pengembangan yang berbeda. Setiap tantangan yang Anda hadapi adalah peluang untuk meningkatkan keterampilan dan pengetahuan Anda.</p>
+    </div>
+</body>
+</html>
